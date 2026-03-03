@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Gym Fast Training</title>
+
+    <!-- ICONO -->
+    <link rel="icon" href="img/icono.JPEG">
+
+    <!-- CSS (ruta corregida) -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+<audio autoplay loop id="musica">
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("click", function() {
+        document.getElementById("musica").play();
+    });
+</script>
+<div class="fondo"></div>
+
+<section id="inicio" class="pantalla activa">
+
+    <header>
+        <h1>URBAN GYM FAST TRAINING</h1>
+        <p>Transforma tu cuerpo, supera tus límites</p>
+    </header>
+
+    <div class="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <p>
+            Urban Gym Fast Training es un gimnasio enfocado en el rendimiento,
+            la disciplina y la superación personal.
+        </p>
+        <p>
+            Entrena tu cuerpo, fortalece tu carácter.
+        </p>
+    </div>
+
+    <div class="contenedor">
+
+        <img src="img/gym.jpg" class="imagen">
+
+        <h2>Entrena hoy, sé más fuerte mañana</h2>
+        <p>El mejor lugar para alcanzar tus objetivos físicos</p>
+
+        <div class="botones">
+            <button class="btn" onclick="mostrar('inscripcion')">Inscribirse</button>
+            <button class="btn" onclick="mostrar('productos')">Productos</button>
+            <button class="btn" onclick="mostrar('planes')">Planes</button>
+            <button class="btn" onclick="mostrar('contactanos')">Contáctanos</button>
+        </div>
+
+        <div class="galeria">
+            <img src="img/entrenamiento5.jpeg" class="imagen">
+            <img src="img/entrenamiento6.jpeg" class="imagen">
+            <img src="img/entrenamiento7.jpeg" class="imagen">
+            <img src="img/entrenamiento8.jpeg" class="imagen">
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Dirección: Planta alta, calle Plutarco Elías Calles Mz 29 Lt 1, Col. Héroes Tecámac</p>
+        <p>Gerente: Perla Mirely Torres</p>
+        <p>© 2026 Urban Gym</p>
+    </footer>
+
+</section>
+
+<section id="inscripcion" class="pantalla">
+    <button class="volver" onclick="mostrar('inicio')">← Volver</button>
+    <div class="contenedor">
+        <h1>INSCRIPCIÓN</h1>
+        <img src="img/inscripcion.jpg" class="imagen">
+        <div class="card">
+            <p>* Asesoría profesional todo el día</p>
+            <p>* Acceso completo a las instalaciones</p>
+            <p>* Entrenadores calificados</p>
+            <p>* Instalaciones seguras y limpias</p>
+        </div>
+        <img src="img/baño.jpeg" class="imagen">
+    </div>
+</section>
+
+<section id="productos" class="pantalla">
+    <button class="volver" onclick="mostrar('inicio')">← Volver</button>
+    <div class="contenedor">
+        <h1>PRODUCTOS</h1>
+        <img src="img/productos.jpg" class="imagen">
+        <div class="botones">
+            <button class="btn" onclick="mostrar('suplementos')">Suplementos</button>
+            <button class="btn" onclick="mostrar('ropa')">Ropa</button>
+            <button class="btn" onclick="mostrar('accesorios')">Accesorios</button>
+        </div>
+    </div>
+</section>
+
+<section id="suplementos" class="pantalla">
+    <button class="volver" onclick="mostrar('productos')">← Volver</button>
+
+<div class="galeria">
+
+    <div class="producto">
+        <img src="img/suplemento1.jpeg" class="imagen">
+        <p class="precio">$450 MXN</p>
+    </div>
+
+    <div class="producto">
+        <img src="img/suplemento2.jpeg" class="imagen">
+        <p class="precio">$520 MXN</p>
+    </div>
+
+    <div class="producto">
+        <img src="img/suplemento3.jpeg" class="imagen">
+        <p class="precio">$390 MXN</p>
+    </div>
+</div>
+</section>
+
+<section id="ropa" class="pantalla">
+    <button class="volver" onclick="mostrar('productos')">← Volver</button>
+<div class="galeria">
+
+    <div class="producto">
+        <img src="img/ropa1.jpg" class="imagen">
+        <p class="precio">$350 MXN</p>
+    </div>
+
+    <div class="producto">
+        <img src="img/ropa2.jpg" class="imagen">
+        <p class="precio">$420 MXN</p>
+    </div>
+
+    <div class="producto">
+        <img src="img/ropa3.jpg" class="imagen">
+        <p class="precio">$300 MXN</p>
+    </div>
+
+</div>
+</section>
+
+<section id="accesorios" class="pantalla">
+    <button class="volver" onclick="mostrar('productos')">← Volver</button>
+    <div class="contenedor">
+        <h1>ACCESORIOS</h1>
+<div class="galeria">
+
+    <div class="producto">
+        <img src="img/accesorio1.jpg" class="imagen">
+        <p class="precio">$250 MXN</p>
+    </div>
+
+    <div class="producto">
+        <img src="img/accesorio2.jpg" class="imagen">
+        <p class="precio">$180 MXN</p>
+    </div>
+
+    <div class="producto">
+        <img src="img/accesorio3.jpg" class="imagen">
+        <p class="precio">$320 MXN</p>
+    </div>
+
+</div>
+</section>
+
+<section id="planes" class="pantalla">
+    <button class="volver" onclick="mostrar('inicio')">← Volver</button>
+    <div class="contenedor">
+        <h1>PLANES</h1>
+        <img src="img/incripciones.jpeg" class="imagen">
+    </div>
+</section>
+
+<section id="contactanos" class="pantalla">
+    <button class="volver" onclick="mostrar('inicio')">← Volver</button>
+    <div class="contenedor">
+        <h1>CONTÁCTANOS</h1>
+        <div class="card">
+            <p><a href="https://wa.me/5596319265" target="_blank">WhatsApp</a></p>
+            <p><a href="https://www.instagram.com/urbangymtecamac/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com/urbangymmexico" target="_blank">Facebook</a></p>
+            <p>Contáctanos en cualquiera de nuestras redes sociales</p>
+            <img src="img/instalacion.jpeg" class="imagen">
+            <img src="img/instalacion2.jpeg" class="imagen">
+        </div>
+    </div>
+</section>
+
+<script>
+function mostrar(id) {
+    document.querySelectorAll('.pantalla').forEach(p => p.classList.remove('activa'));
+    document.getElementById(id).classList.add('activa');
+}
+</script>
+
+</body>
+</html>
